@@ -1,97 +1,127 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+@extends('layouts.master')
+
+@section('content')
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/about.css">
-    <link rel="stylesheet" href="phone.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <script src="https://unpkg.com/scrollreveal"></script>
-    
-</head>
-<body>
-
-
-    <header>
-        <main>
-            <div class="about">
-                <aside>
-                    <div class="container">
-                        <div class="image">
-                            <img src="assets/img/about.jpg" alt="image" width="300px">
-                        </div>
-                    </div>
-                </aside>
-                <article>
-                    <div class="artikel">
-                        <h1><span style="color:  rgb(116, 254, 106);">ACHMAD WHILDAN</span></h1>
-                        <p>Saya whildan siswa dari SMK WIKRAMA BOGOR, Hobi saya bermain futsal,<br> 
-                        Umur saya 16 tahun, jalan lembah neundeut Desa Sukakarya kecamatan <br>
-                        megamendung kabupaten bogor jurusan saya di SMK WIKRAMA adalah PPLG <br>
-                        atau Pengembangan perangkat lunak dan gim</p>
-                    </div>
-                    <div class="button">
-                        <a href="http://127.0.0.1:8000/contact">Contact me</a>
-                    </div>
+    <section class="about">
+        <div class="container-box">
+            <div class="about-content">
+                <article class="text">
+                    <p>
+                        Hello, lets me introduce myself, <br>
+                        my name is <span style="color: rgb(116, 254, 106)">ACHMAD WHILDAN</span>, you could call me <spanstyle="color: rgb(116, 254, 106)">WHILDAN</span>, <br>
+                        I am <span style="color: rgb(116, 254, 106)">16</span> years old, I study at <spanstyle="color: rgb(116, 254, 106)">SMK WIKRAMA BOGOR</span>, <br>
+                        my major is <span style="color: rgb(116, 254, 106)">software and game development.</span>
+                    </p>
                 </article>
             </div>
-        </main>
-        <section>
-            <div class="skill">
-                <h2>SKILL YANG DI KUASAI</h2>
-                <div class="container">
-                    <div class="im">
-                        <img src="assets/img/js.png" alt="" width="300px">
-                        <img src="assets/img/html_css-removebg-preview.png" alt="image" width="300px">
-                        <img src="assets/img/php-removebg-preview.png" alt="" width="300px">
-                    </div>
+                <div class="about-img">
+                    <img src="assets/img/about.jpg" alt="">
                 </div>
-                <div class="skill-bar">
-                    <h2>PROGRES</h2>
+        </div>
+    </section>
 
-                    <li><h3>html</h3>
-                        <span class="bar"><span class="html"></span></span>
-                    </li>
-                    <li><h3>css</h3>
-                        <span class="bar"><span class="css"></span></span>
-                    </li>
-                    <li><h3>php</h3>
-                        <span class="bar"><span class="php"></span></span>
-                    </li>
-                    <li><h3>js</h3>
-                        <span class="bar"><span class="js"></span></span>
-                    </li>
+    <section class="skill">
+
+        <h2>My Skill</h2>
+            <div class="bhs">Lenguages Programming</div>
+            <div class="skill-container">
+                <div class="item">
+                    <i class="fa-brands fa-html5 fa-2xl"></i>
+                    <h4>HTML</h4>
+                </div>
+                <div class="item">
+                    <i class="fa-brands fa-css3-alt fa-2xl"></i>
+                    <h4>CSS</h4>
+                </div>
+                <div class="item">
+                    <i class="fa-brands fa-js fa-2xl"></i>
+                    <h4>JS</h4>
+                </div>
+                <div class="item">
+                    <i class="fa-brands fa-php fa-2xl"></i>
+                    <h4>PHP</h4>
                 </div>
             </div>
-
-            <div class="alamat">
-                <div class="halaman">
-                    <h1>sertifikat</h1>
-                    <div class="sertifikat">
-                        <div class="sertificat"><img src="assets/img/sertifikat.png" alt=""></div>
+    
+            <div class="frame-work">Frameworks</div> 
+                <div class="frame">
+                    <div class="child">
+                        <i class="fa-brands fa-bootstrap fa-2xl"></i>
+                        <h4>bootstrap</h4>
+                    </div>
+                    <div class="child">
+                        <i class="fa-brands fa-css3 fa-2xl"></i>
+                        <h4>Tailwind</h4>
+                    </div>
+                    <div class="child">
+                        <i class="fa-brands fa-laravel fa-2xl"></i>
+                        <h4>Laravel</h4>
+                    </div>
+                    <div class="child">
+                        <i class="fa-brands fa-node-js fa-2xl"></i>
+                        <h4>Node Js</h4>
                     </div>
                 </div>
+    
+            <div class="frame-work">Tools</div>
+                <div class="tools">
+                    <div class="child">
+                        <i class="fa-brands fa-git-alt fa-2xl"></i>
+                        <h4>Git</h4>
+                    </div>
+                    <div class="child">
+                        <i class="fa-brands fa-github fa-2xl"></i>
+                        <h4>Git Hub</h4>
+                    </div>
+                    <div class="child">
+                        <i class="fa-solid fa-code fa-2xl"></i>
+                        <h4>Vs Code</h4>
+                    </div>
+                    <div class="child">
+                        <i class="fa-solid fa-table fa-2xl"></i>
+                        <h4>Xampp</h4>
+                    </div>
+                </div>
+    </section>
 
-                <h1>MAPS</h1>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d564.6132358169062!2d106.90718216107557!3d-6.688170053362806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c95bfabe797f%3A0xb254ff7855c4a43d!2sPasirkalong!5e0!3m2!1sen!2sid!4v1697702288340!5m2!1sen!2sid" width="700px" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <section>
+
+        <h2>My Certificate</h2>
+
+        <div class="sertifikat">
+            <div class="certificate">
+                <img src="assets/img/images.jpeg" width="70px" alt=""></a>
+                <p>Belajar Dasar Pemrograman Web</p>
+                <p style="margin-left: 167px">Dicoding</p>
+                    <a href="https://www.dicoding.com/certificates/QLZ9RYWWMP5D">views <svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                    </svg></a>
             </div>
-        </section>
-        <footer>
-            <span style="color: white;">Copyright©2023 Achmad Whildan</span>
-        </footer>
-    </header>
-    <script>
-        ScrollReveal({ 
-            reset: true, 
-            distance: '60px',
-            duration: 2500,
-            delay: 400
-        }); 
-        ScrollReveal().reveal('.about', { delay: 500, origin: 'left' });
-        ScrollReveal().reveal('.skill', { delay: 600, origin: 'right' });
-        ScrollReveal().reveal('.alamat', { delay: 700, origin: 'left' });
+            <div class="certificate">
+                <img src="assets/img/images.jpeg" width="70px" alt=""></a>
+                <p>Cloud Practitioner Essentials
+                    (Belajar Dasar AWS Cloud)</p>
+                    <p>Dicoding</p>
+                    <a href="//www.dicoding.com/certificates/GRX5OM0QYP0M">views <svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                    </svg></a>
+            </div>
+            <div class="certificate">
+                <img src="assets/img/images.jpeg" width="70px" alt=""></a>
+                <p>Belajar Prinsip Pemrograman SOLID</p>
+                    <p style="margin-left: 147px">Dicoding</p>
+                    <a href="https://www.dicoding.com/certificates/98XWLJ7K9ZM3">views <svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                    </svg></a>
+            </div>
+        </div>
 
-    </script>
-</body>
-</html>
+    </section>
+
+    <footer class="text-center">
+        Copyright©Achmad Whildan|2024
+    </footer>
+
+@endsection

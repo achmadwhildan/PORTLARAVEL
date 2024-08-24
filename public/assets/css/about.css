@@ -1,229 +1,174 @@
-@import url('https://fonts.googleapis.com/css2?family=poppins:wght@300;400;600;700;800;900&display=swap');
-
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-
 
 .about{
     display: flex;
-    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+}
+
+.about-content{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.about-img{
+    border-radius: 50%;
+    margin-top: 10px;
+    
+}
+
+.about-img img{
     margin-left: 20px;
+    margin-top: 10px;
+    top: 3rem;
+    width: 25vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px rgb(116, 254, 106);
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
 }
 
-/* .about .container{
-    transform: translateX(-100%);
+.about-img img:hover{
+    box-shadow: 0 0 25px rgb(116, 254, 106),
+                0 0 50px rgb(116, 254, 106),
+                0 0 100px rgb(116, 254, 106);
 }
 
-.about.show-animate .container{
-    transform: translateX(-100%);
-} */
-
-.image img{
-    border-radius: 12px;
-}
-
-.artikel{
-    margin-left: 90px;
-    margin-top: 20px;
-    font-size: 20px;
-}
-
-.artikel h1{
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.artikel p{
+.text p{
+    font-size: 25px;
     border-bottom: 2px solid rgb(116, 254, 106);
-    margin-top: 20px;
-    padding-top: 20px;
 }
 
-.button a{
+h2{
+    margin-top: 50px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(116, 254, 106);
+}
+
+.container-box{
     border-radius: 12px;
-    color: black;
-    font-size: 20px;
-    display: inline-block;
-    padding: 10px 30px;
-    border: 2px solid rgb(116, 254, 106);
+    margin-top: 100px;
+    padding: 30px 80px;
+    background-color: white;
+    display: flex;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+
+.skill .skill-container .item .child{
+    background-color: #e8e8e4;
+    padding: 20px 50px;
+    border-radius: 10px;
+}
+
+.bhs{
+    padding-top: 20px;
+    margin-top: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 100px;
+}
+
+.skill-container{
     margin-top: 20px;
-    margin-left: 87px;
+    display: flex;
+    gap: 3rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.item{
+    padding: 20px;
+    height: 120px;
+    width: 250px;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.item h4{
+    margin-top: 10px;
+}
+
+.frame{
+    margin-top: 20px;
+    display: flex;
+    gap: 3rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.child{
+    padding-top: 20px;
+    width: 250px;
+    height: 120px;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.child h4{
+    margin-top: 10px;
+}
+
+
+.frame-work{
+    margin-top: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 100px;
+}
+
+.tools{
+    margin-top: 20px;
+    display: flex;
+    gap: 3rem;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.sertifikat{
+    margin-top: 20px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.certificate{
+    display: flex;
+    gap: 3rem;
+    padding: 20px;
+    /* height: 100px; */
+    width: 90%;
+    margin-top: 20px;
+    margin-left: 60px;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.certificate img{
+    margin-left: 30px;
+    border-radius: 10px;
+}
+
+.certificate p{
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.certificate a{
+    margin-top: 10px;
+    font-size: 25px;
+    margin-left: 200px;
     text-decoration: none;
 }
-
-.button a:hover{
-    background-color: rgb(116, 254, 106);
-    transition-duration: 1s;
-}
-
-section{
-    background-color: rgb(116, 254, 106);
-}
-
-.skill{
-    text-align: center;
-    margin-top: 20px;
-}
-
-.container .im{
-    display: flex;
-    justify-content: center;
-
-}
-
-.skill h2{
-    padding-top: 30px;
-    padding-bottom: 30px;
-    font-weight: bold;
-    font-size: 30px;
-}
-
-.alamat{
-    text-align: center;
-}
-
-
-.alamat h1{
-    padding-top: 50px;
-    padding-bottom: 30px;
-    font-weight: bold;
-    font-size: 30px;
-}
-
-.skill-bar{
-    width: 500px;
-    margin: 60px auto;
-    color: #fff;
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 14px rgb(0, 0, 0, 0.25), 0 10px 10px rgb(0, 0, 0, 0.22);
-}
-
-.skill-bar h2{
-    color: rgb(116, 254, 106);
-}
-
-.skill li{
-    margin: 20px 0;
-    padding: 10px;
-    list-style: none;
-    color: rgb(116, 254, 106);
-}
-
-.bar{
-    background-color: white;
-    display: block;
-    height: 20px;
-    border: 1px solid rgb(0, 0, 0, 0.3);
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 1px 3px rgb(0, 0, 0, 0.12), 0 1px 2px rgb(0, 0, 0, 0.24);
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-}
-
-.bar:hover{
-    box-shadow: 0 14px 28px rgb(0, 0, 0, 0.25), 0 10px 10px rgb(0, 0, 0, 0.22);
-}
-
-.bar span{
-    height: 20px;
-    float: left;
-    background: linear-gradient( 135deg, rgba(116, 254, 106, 1)0%, rgba(256,103,103,1)100%);
-}
-
-.halaman{
-    position: relative;
-    min-height: 80vh;
-    background: #fff;
-}
-
-.halaman h1{
-    font-size: 40px;
-    font-weight: normal;
-    padding: 15px;
-    color: black;
-    text-align: center;
-    text-transform: capitalize;
-}
-
-.halaman .sertifikat{
-    flex-wrap: wrap;
-    gap: 15px;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    /* text-align: center; */
-}
-
-
-.halaman .sertifikat .sertificat{
-    height: 250px;
-    width: 350px;
-    border: 5px solid #fff;
-    box-shadow: 0 5px 15px rgba(0,0,0,.1);
-    overflow: hidden;
-    cursor: pointer;
-}
-
-.halaman .sertifikat .sertificat img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    transition: .2s linear;
-}
-
-.halaman .sertifikat .sertificat:hover img{
-    transform: scale(1.1);
-}
-
-
-.html{
-    width: 90%;
-    animation: html 3s;
-}
-
-.css{
-    width: 70%;
-    animation: css 3s;
-}
-
-.php{
-    width: 40%;
-    animation: php 3s;
-}
-
-.js{
-    width: 35%;
-    animation: js 3s;
-}
-
-@keyframes html{
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 90%;
-    }
-}
-
-@keyframes css{
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 70%;
-    }
-}
-
-iframe{
-    border-radius: 12px;
-}
-
-footer{
-    background-color: black;
-    text-align: center;
-    padding: 20px 0 20px 0;
-}
-
